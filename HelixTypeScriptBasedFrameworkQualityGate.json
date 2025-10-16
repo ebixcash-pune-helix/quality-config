@@ -1,0 +1,91 @@
+{
+  "name": "HelixTypeScriptBasedFrameworkQualityGate",
+  "conditions": [
+    {
+      "id": "940f6436-d11d-468e-8239-8eb3e8204cc7",
+      "metric": "new_security_hotspots_reviewed",
+      "op": "LT",
+      "error": "100",
+      "isCaycCondition": true
+    },
+    {
+      "id": "9fb0bd84-6e3b-4448-acc9-3bbd94679803",
+      "metric": "new_duplicated_lines_density",
+      "op": "GT",
+      "error": "5",
+      "isCaycCondition": true
+    },
+    {
+      "id": "9999a398-89b4-4f54-8662-8d6e70895a70",
+      "metric": "new_coverage",
+      "op": "LT",
+      "error": "65",
+      "isCaycCondition": true
+    },
+    {
+      "id": "9dc3b2cf-fade-4944-b74a-ab81b3d88b82",
+      "metric": "new_violations",
+      "op": "GT",
+      "error": "0",
+      "isCaycCondition": true
+    },
+    {
+      "id": "212e4471-32a1-4357-a1c5-cd0b14c2cdf9",
+      "metric": "new_software_quality_security_rating",
+      "op": "GT",
+      "error": "1",
+      "isCaycCondition": false
+    },
+    {
+      "id": "5e174ee9-ca0e-4043-ae76-895873d8db48",
+      "metric": "new_software_quality_reliability_rating",
+      "op": "GT",
+      "error": "1",
+      "isCaycCondition": false
+    },
+    {
+      "id": "f540882e-9fc3-4d41-930c-99585a5ec98d",
+      "metric": "new_software_quality_maintainability_rating",
+      "op": "GT",
+      "error": "1",
+      "isCaycCondition": false
+    },
+    {
+      "id": "59850314-38f2-4b6f-9ecd-a359aa5b1cba",
+      "metric": "new_line_coverage",
+      "op": "LT",
+      "error": "65",
+      "isCaycCondition": false
+    },
+    {
+      "id": "7eacaaed-857f-4c32-9996-5632dd521e74",
+      "metric": "new_branch_coverage",
+      "op": "LT",
+      "error": "55",
+      "isCaycCondition": false
+    },
+    {
+      "id": "cd7a2c18-14a3-4834-97e7-ad9537fd39af",
+      "metric": "new_uncovered_lines",
+      "op": "GT",
+      "error": "15",
+      "isCaycCondition": false
+    }
+  ],
+  "isBuiltIn": false,
+  "actions": {
+    "rename": true,
+    "setAsDefault": true,
+    "copy": true,
+    "associateProjects": true,
+    "delete": true,
+    "manageConditions": true,
+    "delegate": true,
+    "manageAiCodeAssurance": true
+  },
+  "caycStatus": "over-compliant",
+  "isDefault": false,
+  "hasStandardConditions": false,
+  "hasMQRConditions": true,
+  "isAiCodeSupported": false
+}
