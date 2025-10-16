@@ -1,0 +1,119 @@
+{
+  "name": "HelixJ2EEStrictGate",
+  "conditions": [
+    {
+      "id": "1cec491e-5cfc-41ea-9127-cc73ef5346bb",
+      "metric": "new_duplicated_lines_density",
+      "op": "GT",
+      "error": "3",
+      "isCaycCondition": true
+    },
+    {
+      "id": "74c1d4d7-9a71-4e60-83cb-dec07f572cb6",
+      "metric": "new_security_hotspots_reviewed",
+      "op": "LT",
+      "error": "100",
+      "isCaycCondition": true
+    },
+    {
+      "id": "dd708611-b2f3-45da-b346-09b8b1818043",
+      "metric": "new_violations",
+      "op": "GT",
+      "error": "0",
+      "isCaycCondition": true
+    },
+    {
+      "id": "4029b199-d650-48d6-bc21-a69caed01048",
+      "metric": "new_coverage",
+      "op": "LT",
+      "error": "1",
+      "isCaycCondition": true
+    },
+    {
+      "id": "5909f299-ce57-41e4-a86f-903e64a6c1d1",
+      "metric": "new_software_quality_security_issues",
+      "op": "GT",
+      "error": "0",
+      "isCaycCondition": false
+    },
+    {
+      "id": "e9c146aa-93ac-4142-b927-fbae9a825c63",
+      "metric": "new_software_quality_security_rating",
+      "op": "GT",
+      "error": "1",
+      "isCaycCondition": false
+    },
+    {
+      "id": "6eb0a465-20ef-4111-ab1c-ca96b9eed701",
+      "metric": "new_software_quality_reliability_issues",
+      "op": "GT",
+      "error": "0",
+      "isCaycCondition": false
+    },
+    {
+      "id": "c8ec4b00-e1c6-4ea9-8613-5046bd27e84f",
+      "metric": "new_software_quality_reliability_rating",
+      "op": "GT",
+      "error": "1",
+      "isCaycCondition": false
+    },
+    {
+      "id": "cf77d9ac-a230-479e-8884-86c71414e796",
+      "metric": "new_software_quality_maintainability_issues",
+      "op": "GT",
+      "error": "0",
+      "isCaycCondition": false
+    },
+    {
+      "id": "189db8a2-ad35-4345-ad94-af217ae3bcd9",
+      "metric": "new_software_quality_maintainability_rating",
+      "op": "GT",
+      "error": "1",
+      "isCaycCondition": false
+    },
+    {
+      "id": "092476d2-7611-44c9-8e9e-39a4f9b4a137",
+      "metric": "new_software_quality_maintainability_debt_ratio",
+      "op": "GT",
+      "error": "5",
+      "isCaycCondition": false
+    },
+    {
+      "id": "a89a563b-0788-48d4-9423-c34912070c3a",
+      "metric": "new_branch_coverage",
+      "op": "LT",
+      "error": "70",
+      "isCaycCondition": false
+    },
+    {
+      "id": "ba345c4a-f585-4d5d-9bff-206172645841",
+      "metric": "new_line_coverage",
+      "op": "LT",
+      "error": "80",
+      "isCaycCondition": false
+    },
+    {
+      "id": "57d8b86b-f107-47fd-8410-e7ce43d420e5",
+      "metric": "new_uncovered_lines",
+      "op": "GT",
+      "error": "10",
+      "isCaycCondition": false
+    }
+  ],
+  "isBuiltIn": false,
+  "actions": {
+    "rename": true,
+    "setAsDefault": false,
+    "copy": true,
+    "associateProjects": false,
+    "delete": false,
+    "manageConditions": true,
+    "delegate": true,
+    "manageAiCodeAssurance": true
+  },
+  "caycStatus": "over-compliant",
+  "isDefault": true,
+  "hasStandardConditions": false,
+  "hasMQRConditions": true,
+  "isAiCodeSupported": false
+}
